@@ -9,6 +9,6 @@ Citizen.CreateThread(function()
 		for i = 1, 13 do
 			EnableDispatchService(i, EnableDispatch)
 		end
-		Citizen.Wait(1)			
+		Citizen.Wait(0)			
 	end
 end)
