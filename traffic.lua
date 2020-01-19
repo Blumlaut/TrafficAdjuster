@@ -9,6 +9,8 @@ Citizen.CreateThread(function()
 		SetRandomVehicleDensityMultiplierThisFrame((TrafficAmount/100)+.0)
 		SetParkedVehicleDensityMultiplierThisFrame((ParkedAmount/100)+.0)
 		SetScenarioPedDensityMultiplierThisFrame((PedestrianAmount/100)+.0, (PedestrianAmount/100)+.0)
+		SetRandomBoats(enableBoats)
+		SetRandomTrains(enableTrains)
 		Citizen.Wait(0)
 	end
 end)
