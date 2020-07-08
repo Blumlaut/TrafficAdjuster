@@ -1,4 +1,4 @@
-Citizen.CreateThread(function()
+CreateThread(function()
 	for i = 1, 13 do
 		EnableDispatchService(i, EnableDispatch)
 	end
@@ -12,6 +12,6 @@ Citizen.CreateThread(function()
 		SetRandomBoats(EnableBoats)
 		SetRandomTrains(EnableTrains)
                 SetGarbageTrucks(EnableGarbageTrucks)
-		Citizen.Wait(0)
+		Wait(0)
 	end
 end)
