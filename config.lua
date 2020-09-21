@@ -1,10 +1,10 @@
-TrafficAmount = 100 
-PedestrianAmount = 100
-ParkedAmount = 100
-EnableDispatch = true
-EnableBoats = true
-EnableTrains = true
-EnableGarbageTrucks = true
+TrafficAmount = 0 
+PedestrianAmount = 0
+ParkedAmount = 0
+EnableDispatch = false
+EnableBoats = false
+EnableTrains = false
+EnableGarbageTrucks = false
 
 --[[
 	TrafficAmount changes how much traffic there is on the Roads, this goes from 100% to 0%, values over 100% are also supported but not recommended, under 0% will cause a game crash.
