@@ -1,9 +1,8 @@
 Citizen.CreateThread(function()
-	for i = 1, 13 do
+	for i = 1, 15 do
 		EnableDispatchService(i, EnableDispatch)
 	end
 	while true do
-		-- These natives has to be called every frame.
 		SetVehicleDensityMultiplierThisFrame((TrafficAmount/100)+.0)
 		SetPedDensityMultiplierThisFrame((PedestrianAmount/100)+.0)
 		SetRandomVehicleDensityMultiplierThisFrame((TrafficAmount/100)+.0)
@@ -12,6 +11,6 @@ Citizen.CreateThread(function()
 		SetRandomBoats(EnableBoats)
 		SetRandomTrains(EnableTrains)
                 SetGarbageTrucks(EnableGarbageTrucks)
-		Citizen.Wait(0)
+		Wait(0) -- These natives has to be called every frame.
 	end
 end)
